@@ -7,7 +7,7 @@ const AppContext = React.createContext();
 const AppProvider = ({ children }) => {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState({ show: false, msg: "" });
-  const [query, setQuery] = useState("batma");
+  const [query, setQuery] = useState("sup");
   const [movies, setMovies] = useState([]);
 
   const fetchMovies = async (url) => {
@@ -16,10 +16,9 @@ const AppProvider = ({ children }) => {
     try {
       const response = await fetch(url);
       const data = await response.json();
-      console.log(data);
 
       if (data.Response === "True") {
-        setMovies(data);
+        setMovies(data.Search);
         setError({ show: false, msg: "" });
       } else {
         setError({ show: true, msg: data.Error });
