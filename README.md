@@ -26,7 +26,7 @@ The routing implemented using react-router-dom to work properly on the server si
 
 #### CRA Fix
 
-If an error occurs `'CI' is not recognized as an internal or external command, operable program or batch file.` when npm run build is used for the production build locally and manually deploying on Netlify, make sure to remove `CI=` for build in [package.json](https://github.com/praveen-1995/cocktails-react-project/blob/3947a359654ca7be2260e369f1cb5b2f60d7ebe9/package.json)
+If an error occurs `'CI' is not recognized as an internal or external command, operable program or batch file.` when npm run build is used for the production build locally and manually deploying on Netlify, make sure to remove `CI=` for build in [package.json](https://github.com/praveen-1995/movie-db-react-project/blob/a39c21fa36e2782539f7c660a7f513d7ca32cede/package.json)
 
 ```
 
