@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-
+import { useState, useEffect } from "react";
+// make sure to use https
 const API_ENDPOINT = `https://www.omdbapi.com/?apikey=${process.env.REACT_APP_MOVIE_API_KEY}`;
 
 const useFetch = (useParams) => {
@@ -15,7 +15,7 @@ const useFetch = (useParams) => {
       const data = await response.json();
 
       if (data.Response === "True") {
-        console.log(data);
+        // console.log(data);
         setData(data.Search || data);
         setError({ show: false, msg: "" });
       } else {
