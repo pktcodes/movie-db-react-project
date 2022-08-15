@@ -53,5 +53,5 @@ But make sure to add `CI=` again when using continuous deployment setup on Netli
 npm install react-router-dom@6
 ```
 
-_Note: I have developed this project ~ [21] on part of React and Projects Course thought by John Smilga._
+_Note: I have developed this project ~ [21] as part of React and Projects Course taught by John Smilga._
 
